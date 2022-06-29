@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="madlibs.css">
+        <title> Mad Libs</title>
+    </head>
+    <body>
+        <div class="container">
+            <header> 
+                <h1>🌠 Star Wars Mad Libs 🌠</h1>
+                <h2> May the Force be with you! 🌌</h2>
+                <p> Fill in the blanks for a fun Star Wars´ story! Make sure to think outside the box. The wackier the better!</p>
+            </header>
+
+            <main>
+
+                <!--MadLibs Form-->
+
+                <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+                <section id="madlibs-input">
+
+                    <div class="input-group">
+                        <label for="adjective_1">🦄 adjective</label>
+                        <input type="text" id="adjective_1" name="adjective_1" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="noun_1">✏️ noun</label>
+                        <input type="text" id="noun_1" name="noun_1" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="adjective_2">🦄 adjective</label>
+                        <input type="text" id="adjective_2" name="adjective_2" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="noun_place">🌄noun place </label>
+                        <input type="text" id="noun_place" name="noun_place" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="adjective_3">🦄 adjective</label>
+                        <input type="text" id="adjective_3" name="adjective_3" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="noun_2">✏️ noun</label>
+                        <input type="text" id="noun_2" name="noun_2" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="verb_1">⏩ verb</label>
+                        <input type="text" id="verb_1" name="verb_1" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adjective_4">🦄 adjective</label>
+                        <input type="text" id="adjective_4" name="adjective_4" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="verb_2">⏩ verb</label>
+                        <input type="text" id="verb_2" name="verb_2" required>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="plural_1">✍ plural noun</label>
+                        <input type="text" id="plural_1" name="plural_1" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="plural_job">💼 plural noun: job</label>
+                        <input type="text" id="plural_job" name="plural_job" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adjective_5">🦄 adjective</label>
+                        <input type="text" id="adjective_5" name="adjective_5" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="verb_3">⏩ verb</label>
+                        <input type="text" id="verb_3" name="verb_3" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="adjective_6">🦄 adjective</label>
+                        <input type="text" id="adjective_6" name="adjective_6" required>
+                    </div>
+                    </section>
+
+                    <section id="madlibs-submit">
+                        <button type="submit">Generate</button>
+                    </section>
+                </form>
+
+                <section id="completed-story" class="hide"></section>
+            
+            </main>
+        </div>
+
+
+        <!-- JS-->
+        <script src="./madlibs.js"></script>
+    </body>
+</html>
